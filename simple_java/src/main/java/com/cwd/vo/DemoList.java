@@ -11,9 +11,6 @@ import java.util.List;
 @ApiModel(description = "测试swagger生成")
 public class DemoList {
 
-    private Demo demo;
-
-    private String aa;
 
     List<Demo> demos;
 
@@ -23,21 +20,5 @@ public class DemoList {
 
     public void setDemos(List<Demo> demos) {
         this.demos = demos;
-    }
-
-    public Demo getDemo() {
-        return demo;
-    }
-
-    public void setDemo(Demo demo) {
-        this.demo = demo;
-    }
-
-    public String getAa() {
-        return aa;
-    }
-
-    public void setAa(String aa) {
-        this.aa = aa;
     }
 }

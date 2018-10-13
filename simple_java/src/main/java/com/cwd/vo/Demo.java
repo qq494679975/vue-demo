@@ -47,6 +47,12 @@ public class Demo {
     public Demo() {
     }
 
+    public Demo(String name, Integer age, Date time) {
+        this.name = name;
+        this.age = age;
+        this.time = time;
+    }
+
     public Date getTime() {
         return time;
     }

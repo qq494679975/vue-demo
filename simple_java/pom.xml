@@ -3,10 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.9.RELEASE</version>
+    </parent>
 
     <groupId>simple_java</groupId>
     <artifactId>simple_java</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <asciidoctor.maven.plugin.version>1.5.5</asciidoctor.maven.plugin.version>
@@ -24,11 +31,6 @@
             <artifactId>spring-beans</artifactId>
             <version>4.3.10.RELEASE</version>
         </dependency>
-        <dependency>
-            <groupId>net.sf.json-lib</groupId>
-            <artifactId>json-lib</artifactId>
-            <version>2.4</version>
-        </dependency>
 
         <dependency>
             <groupId>io.springfox</groupId>
@@ -40,11 +42,6 @@
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.7.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.clojars.cbilson</groupId>
-            <artifactId>pinyin4j</artifactId>
-            <version>2.5.0</version>
         </dependency>
     </dependencies>
 

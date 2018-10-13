@@ -5,6 +5,8 @@ import vOn from '@/components/v_on'
 import vFor from '@/components/v_for'
 import list from '@/components/list'
 import parent from '@/components/parent'
+import vuebus from '@/components/vuebus/vueBusListen'
+import dom from '@/components/dom'
 Vue.use(Router)
 
 export default new Router({
@@ -33,6 +35,16 @@ export default new Router({
       path: '/parent',
       name: 'parent',
       component: parent
+    },
+    {
+      path: '/vuebus',
+      name: 'vuebus',
+      component: vuebus
+    },
+    {
+      path: '/dom',
+      name: 'dom',
+      component: dom
     },
     {
       // 重定向

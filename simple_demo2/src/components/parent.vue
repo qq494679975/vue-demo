@@ -1,6 +1,6 @@
 <template>
   <div>
-    <vOn></vOn>  <!--添加组件-->
+    <vOn :textOne="text2"></vOn>  <!--添加组件-->
     <hr/>
     <list></list>
   </div>
@@ -17,7 +17,8 @@ export default {
   data () {
     return {
       aboutMsg: '我是about组件',
-      isRed: false
+      isRed: false,
+      text2: 'parent传给子组件的值'
     }
   },
   methods: {},

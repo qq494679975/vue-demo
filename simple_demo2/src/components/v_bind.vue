@@ -1,5 +1,8 @@
 <template>
   <div>
+    <header>
+      <router-link to="/dom">跳转到dom</router-link>
+    </header>
     <h1>about</h1>
     <p v-bind:class="isRed?'green':'red'">{{aboutMsg}}</p>
     <button v-on:click="change">点击切换样式</button>

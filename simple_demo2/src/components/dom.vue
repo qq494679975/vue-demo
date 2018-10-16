@@ -1,7 +1,7 @@
 <template>
   <div ref="mydiv">
     <header>
-      <router-link to="/vBind">跳转到bind</router-link>
+      <router-link :to="{name:'vBind',query:{id:'aaa'}}">跳转到bind</router-link>
     </header>
     <button @click="addHero">獲取div對象</button>
     <div ref="aaa"></div>
@@ -37,6 +37,7 @@
     created() {
       //组件创建后，数据已经初始化完 dom还没有生成
       console.log('created', this.$refs.mydiv)
+      console.log('bind传过来的参数:', this.$route.params.id)
     },
     mounted() {
       //组件创建后，数据已经初始化完 将数据渲染到dom，dom生成

@@ -2,6 +2,7 @@
   <div>
     <header>
       <router-link to="/dom">跳转到dom</router-link>
+      <router-link :to="{name:'dom',params:{id:'bbb'}}">跳转到dom</router-link>
     </header>
     <h1>about</h1>
     <p v-bind:class="isRed?'green':'red'">{{aboutMsg}}</p>
@@ -18,12 +19,20 @@ export default {
   },
   methods: {
     change () {
+      console.info(this.$route.query)
       if (this.isRed) {
         this.isRed = false
       } else {
         this.isRed = true
       }
     }
+  },
+  created(){
+    //获取vbind传过来的id
+    console.info('获取vbind传过来的id:'+this.$route.query)
+  },
+  mounted(){
+
   }
 }
 </script>
